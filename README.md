@@ -1,4 +1,4 @@
-# Page_Object_Model
+# Page Object Model
 A Selenium Project Built to master Page Factory and POM Structure in Selenium
 
 # Installation
