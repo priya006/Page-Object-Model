@@ -1,4 +1,4 @@
-# Page_Object_Model
+# Page Object Model
 A Selenium Project Built to master Page Factory and POM Structure in Selenium
 
 # Installation
@@ -18,4 +18,3 @@ A Selenium Project Built to master Page Factory and POM Structure in Selenium
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M5</version>
 ```
-Note: Executing command `mvn test` should give you `BUILD SUCCESS` Message!
