@@ -17,7 +17,7 @@ public class BrowserStackSetup {
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("start-maximized");
         WebDriver driver = new ChromeDriver(chromeOptions);
-        driver.get("http://www.google.com");
+        driver.get("https://www.browserstack.com/");
         String title =   driver.getTitle();
         System.out.println(title);
 
