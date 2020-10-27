@@ -2,7 +2,7 @@ package browserStackPages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import sun.jvm.hotspot.utilities.Assert;
+
 
 public class BrowserStackSignUpPage {
 
