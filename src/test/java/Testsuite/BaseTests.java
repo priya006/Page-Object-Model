@@ -2,6 +2,7 @@ package Testsuite;
 
 
 import browserStackSetup.Setup;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class BaseTests extends Setup {
@@ -14,10 +15,11 @@ public class BaseTests extends Setup {
     }
 
     @Test(priority = 2)
-    public void enter_userDetails(){
+    @Parameters({"name"})
+    public void enter_userDetails(String name){
 
         browserStackSignUpPage.veryHeader();
-        browserStackSignUpPage.enterFullName("Priya");
+        browserStackSignUpPage.enterFullName(name);
         browserStackSignUpPage.enterBusinessEmail("TestUser@gmail.com");
         browserStackSignUpPage.enterPasswrod("TestUserPassword");
 

@@ -2,6 +2,12 @@
 
 <suite name="BrowserStack test suite" verbose="1" >
     <test name="Login Tests" >
+
+    <parameter name="name" value="Deblyn">
+
+
+    </parameter>
+        
         <classes>
             <class name="Testsuite.BaseTests" />
         </classes>
