@@ -30,7 +30,9 @@ public class Setup {
 
     @BeforeTest
     public void setDriver() throws MalformedURLException, InterruptedException {
+        LOGGER.trace("Tracing");
         LOGGER.info("Chrome Driver Setup");
+        LOGGER.debug("some");
         System.setProperty("webdriver.chrome.driver", "/Users/pboopathi/Downloads/chromedriver" );
         browserStackHomePage =  new BrowserStackHomePage(driver);
         browserStackSignUpPage = new BrowserStackSignUpPage(driver);

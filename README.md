@@ -20,4 +20,4 @@ A Selenium Project Built to master Page Factory and POM Structure in Selenium
 ```
 **Note:** Executing command `mvn test` should give you `BUILD SUCCESS` Message!
 4. Chrome Browser Version `Version 86.0.4240.111` and ChromeDriver Version `86.0`
-5. Include `log4j`
+5. Include `log4j-api` and `log4j-core` library dependency and name the properties file as `log4j2.properties` in the path `resources`. Specify the package name which has logging to be recorded in the key  `logger.file.name`
