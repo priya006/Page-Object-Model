@@ -19,4 +19,5 @@ A Selenium Project Built to master Page Factory and POM Structure in Selenium
                 <version>3.0.0-M5</version>
 ```
 **Note:** Executing command `mvn test` should give you `BUILD SUCCESS` Message!
-3. Chrome Browser Version `Version 86.0.4240.111` and ChromeDriver Version `86.0`
+4. Chrome Browser Version `Version 86.0.4240.111` and ChromeDriver Version `86.0`
+5. Include `log4j`
