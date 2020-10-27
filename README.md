@@ -23,6 +23,14 @@ A Selenium Project Built to master Page Factory and POM Structure in Selenium
 ```
     4. Chrome Browser Version `Version 86.0.4240.111` and ChromeDriver Version `86.0`
     5. Include `log4j-api` and `log4j-core` library dependency and name the properties file as `log4j2.properties` in the path `resources`. Specify the package name which has logging to be recorded in the key  `logger.file.name`
-
+  
+ ## TestNG 
 
 **Note:** Executing command `mvn test` should give you `BUILD SUCCESS` Message!
+
+
+### How to run the Tests?
+
+
+# Limitation
+1. Could not write the loging to a file. The log4j2 properties file can create a log file. But could not write to a file

@@ -1,5 +1,3 @@
-tests/BaseTests.class
 browserStackPages/BrowserStackHomePage.class
-tests/Some.class
 browserStackPages/BrowserStackSignUpPage.class
 browserStackSetup/Setup.class

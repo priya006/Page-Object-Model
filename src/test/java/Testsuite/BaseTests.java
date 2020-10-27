@@ -1,7 +1,6 @@
-package tests;
+package Testsuite;
 
 
-import browserStackPages.BrowserStackSignUpPage;
 import browserStackSetup.Setup;
 import org.testng.annotations.Test;
 
