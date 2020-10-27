@@ -1,16 +1,21 @@
 package browserStackPages;
 
+import browserStackSetup.Setup;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 
-public class BrowserStackSignUpPage {
+public class BrowserStackSignUpPage extends Setup {
 
-    WebDriver driver;
     By Header = By.xpath("//h1");
     By userName = By.xpath("//*[@id='user_full_name']");
     By businessEmail = By.xpath("//*[@id='user_email_login']");
     By password = By.xpath("//*[@id='user_password']");
+
+    /**
+     * Constructor
+     * @param driver
+     */
     public BrowserStackSignUpPage(WebDriver driver) {
         this.driver = driver;
     }

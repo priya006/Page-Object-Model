@@ -12,15 +12,17 @@ import org.testng.annotations.Test;
 import java.net.MalformedURLException;
 
 
-public class BrowserStackSetup {
+public class Setup {
 
-  private  static   WebDriver driver;
-    BrowserStackHomePage browserStackHomePage;
-    BrowserStackSignUpPage browserStackSignUpPage;
+    public   static   WebDriver driver;
+    public BrowserStackHomePage browserStackHomePage;
+    public BrowserStackSignUpPage browserStackSignUpPage;
 
     @BeforeTest
     public void setUp() throws MalformedURLException, InterruptedException {
         System.setProperty("webdriver.chrome.driver", "/Users/pboopathi/Downloads/chromedriver" );
+        browserStackHomePage =  new BrowserStackHomePage(driver);
+        browserStackSignUpPage = new BrowserStackSignUpPage(driver);
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("start-maximized");
          driver = new ChromeDriver(chromeOptions);
@@ -30,23 +32,7 @@ public class BrowserStackSetup {
 
     }
 
-    @Test(priority = 1)
-    public void navigate_to_home_page(){
-        browserStackHomePage = new BrowserStackHomePage(driver);
-        browserStackHomePage.veryHeader();
-        browserStackHomePage.clickOnGetStarted();
-    }
 
-    @Test(priority = 2)
-    public void enter_userDetails(){
-        browserStackSignUpPage = new BrowserStackSignUpPage(driver);
-        browserStackSignUpPage.veryHeader();
-        browserStackSignUpPage.enterFullName("Priya");
-        browserStackSignUpPage.enterBusinessEmail("TestUser@gmail.com");
-        browserStackSignUpPage.enterPasswrod("TestUserPassword");
-
-
-    }
 }
 
 

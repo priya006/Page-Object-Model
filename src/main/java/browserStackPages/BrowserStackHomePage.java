@@ -1,12 +1,13 @@
 package browserStackPages;
 
+import browserStackSetup.Setup;
 import com.sun.tools.javac.util.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class BrowserStackHomePage {
+public class BrowserStackHomePage extends Setup {
 
-    WebDriver driver;
+
     By Header=By.xpath("//h1");
     By getStarted=By.xpath("//*[@id='signupModalButton']");
 
