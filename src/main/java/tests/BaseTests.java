@@ -16,7 +16,7 @@ public class BaseTests extends Setup {
 
     @Test(priority = 2)
     public void enter_userDetails(){
-        LOGGER.debug("Log4j appender configuration is successful !!");
+
         browserStackSignUpPage.veryHeader();
         browserStackSignUpPage.enterFullName("Priya");
         browserStackSignUpPage.enterBusinessEmail("TestUser@gmail.com");

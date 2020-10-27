@@ -20,7 +20,7 @@ public class Setup {
     public static WebDriver driver;
     public BrowserStackHomePage browserStackHomePage;
     public BrowserStackSignUpPage browserStackSignUpPage;
-    public static Logger LOGGER = null;
+    private static Logger LOGGER = null;
 
 
     public  Setup(){
@@ -45,7 +45,9 @@ public class Setup {
 
     @AfterTest
     public void TearDown(){
+        LOGGER.info("TearDown");
         driver.quit();
+
     }
 
 
