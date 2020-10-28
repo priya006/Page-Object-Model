@@ -30,16 +30,18 @@ public class Setup {
 
     @BeforeTest
     public void setDriver() throws MalformedURLException, InterruptedException {
+      String macChromeDriver =  PropertyManager.getInstance().getMacChromeDriver();
         LOGGER.trace("Tracing");
         LOGGER.info("Chrome Driver Setup");
         LOGGER.debug("some");
-        System.setProperty("webdriver.chrome.driver", "/Users/pboopathi/Downloads/chromedriver" );
+        System.setProperty("webdriver.chrome.driver", macChromeDriver );
         browserStackHomePage =  new BrowserStackHomePage(driver);
         browserStackSignUpPage = new BrowserStackSignUpPage(driver);
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("start-maximized");
          driver = new ChromeDriver(chromeOptions);
-        driver.get("https://www.browserstack.com/");
+        String baseUrl = PropertyManager.getInstance().getUrl();
+        driver.get(baseUrl);
         String title =   driver.getTitle();
         System.out.println(title);
 

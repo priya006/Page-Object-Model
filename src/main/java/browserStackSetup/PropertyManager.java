@@ -10,7 +10,7 @@ public class PropertyManager {
     private static PropertyManager instance;
     private static final Object lock = new Object();
     private static String propertyFilePath = System.getProperty("user.dir")+
-            "src/main/resources/config.properties";
+            "/src/main/resources/config.properties";
     private static String url;
     private static String macChromeDriver;
 
@@ -50,7 +50,7 @@ public class PropertyManager {
         return url;
     }
 
-    public static String getMacChromeDriver() {
+    public  String getMacChromeDriver() {
         return macChromeDriver;
     }
 }
