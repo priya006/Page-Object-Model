@@ -2,6 +2,7 @@ package Testsuite;
 
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -22,15 +23,12 @@ public class BaseTests extends Setup {
     public void navigate_to_home_page() throws IOException {
         WebElement element = driver.findElement(browserStackHomePage.getStarted);
         browserStackHomePage.veryHeader();
-        takeScreenshot("/Users/pboopathi/Desktop/google-home.png");
-        takeWebElementScreenShot(element);
+        takeScreenshot("/Users/pboopathi/Desktop/entirepage.png");
+        String webElementScreenshot = "/Users/pboopathi/Desktop/webelementscreen.png";
+        takeWebElementScreenShot(element,webElementScreenshot,driver);
         browserStackHomePage.clickOnGetStarted();
     }
 
-    public void takeWebElementScreenShot(WebElement element) throws IOException {
-        Screenshot screenshot  = new AShot().coordsProvider(new WebDriverCoordsProvider()).takeScreenshot(driver,element);
-        ImageIO.write(screenshot.getImage(), "PNG", new File("/Users/pboopathi/Desktop/something1.png"));
-    }
 
     @Test(priority = 2)
     @Parameters({"name"})
@@ -42,4 +40,10 @@ public class BaseTests extends Setup {
         browserStackSignUpPage.enterPasswrod("TestUserPassword");
 
     }
+
+    public void takeWebElementScreenShot(WebElement element, String pathname, WebDriver driver) throws IOException {
+        Screenshot screenshot  = new AShot().coordsProvider(new WebDriverCoordsProvider()).takeScreenshot(driver,element);
+        ImageIO.write(screenshot.getImage(), "PNG", new File(pathname));
+    }
+
 }
