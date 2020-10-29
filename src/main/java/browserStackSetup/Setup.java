@@ -8,6 +8,7 @@ import org.apache.logging.log4j.core.util.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterTest;
@@ -23,6 +24,11 @@ import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import org.apache.logging.log4j.LogManager;
+import ru.yandex.qatools.ashot.AShot;
+import ru.yandex.qatools.ashot.Screenshot;
+import ru.yandex.qatools.ashot.coordinates.WebDriverCoordsProvider;
+
+import javax.imageio.ImageIO;
 
 
 public class Setup {
@@ -61,6 +67,8 @@ public class Setup {
         File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         Files.copy(src, new File(pathname));
     }
+
+
 
     @AfterTest
     public void TearDown(){

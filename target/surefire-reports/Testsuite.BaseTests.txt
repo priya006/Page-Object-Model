@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: Testsuite.BaseTests
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 22.188 s <<< FAILURE! - in Testsuite.BaseTests
+Testsuite.BaseTests.enter_userDetails  Time elapsed: 2.39 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Parameter 'name' is required by @Test on method enter_userDetails but has not been marked @Optional or defined
+
+

@@ -8,7 +8,7 @@ public class BrowserStackHomePage extends Setup {
 
 
     By Header=By.xpath("//h1");
-    By getStarted=By.xpath("//*[@id='signupModalButton']");
+    public By getStarted=By.xpath("//*[@id='signupModalButton']");
 
     public BrowserStackHomePage(WebDriver driver) {
         this.driver=driver;
