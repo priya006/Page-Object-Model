@@ -15,7 +15,7 @@ public class PropertyManager {
     private static String macChromeDriver;
 
     /**
-     *
+     * Singleton pattern is used so instantiation can be done only once
      */
 
     public static PropertyManager getInstance(){
