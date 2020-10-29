@@ -33,6 +33,8 @@ A Selenium Project Built to master Page Factory and POM Structure in Selenium
 1. Right click `testng.xml` file and run the test suite at one shot
 
 ### How to take Screenshot in selenium
+1. Entire page could be taken screenshot using the interface in selenium `TakesScreenshot`
+2. Specified WebElement alone could be taken screenshot using `ashot`
 
 # Limitation
 1. Could not write the loging to a file. The log4j2 properties file can create a log file. But could not write to a file
