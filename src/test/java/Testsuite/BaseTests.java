@@ -24,7 +24,7 @@ import java.io.IOException;
 public class BaseTests extends Setup {
 
     @Test(priority = 1)
-    public void navigate_to_home_page() throws IOException {
+    public void navigate_to_home_page() throws IOException, InterruptedException {
         WebElement element = driver.findElement(browserStackHomePage.getStarted);
         browserStackHomePage.veryHeader();
         takeScreenshot("/Users/pboopathi/Desktop/entirepage.png");
@@ -67,7 +67,7 @@ public class BaseTests extends Setup {
     @Parameters({"name"})
     public void enter_userDetails(String name){
 
-        browserStackSignUpPage.veryHeader();
+        //browserStackSignUpPage.veryHeader();
         browserStackSignUpPage.enterFullName(name);
         browserStackSignUpPage.enterBusinessEmail("TestUser@gmail.com");
         browserStackSignUpPage.enterPasswrod("TestUserPassword");

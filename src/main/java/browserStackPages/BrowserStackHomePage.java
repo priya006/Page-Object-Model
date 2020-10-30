@@ -20,10 +20,12 @@ public class BrowserStackHomePage extends Setup {
         String getheadertext=driver.findElement(Header).getText();
 //        Assert.checkNonNull(getheadertext,"not null");
     }
-    public void clickOnGetStarted() {
-        WebElement getStartedWebElement = new WebDriverWait((driver),500).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='signupModalButton']")));
+    public void clickOnGetStarted() throws InterruptedException {
+        WebElement getStartedWebElement = new WebDriverWait((driver),1000).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='signupModalButton']")));
+        Thread.sleep(500);
 //        driver.findElement(getStarted).click();
         getStartedWebElement.click();
+
 
     }
 }
