@@ -37,7 +37,11 @@ A Selenium Project Built to master Page Factory and POM Structure in Selenium
 2. Specified WebElement alone could be taken screenshot using `ashot`
 3. Compare the Expected and actual image using `makeDiff` from `ashot` library. 
     **Example:** `   ImageDiff diff = imageDiffer.makeDiff(expectedImage,actualImage);`
-4. Particular WebElement could be  **highlighted** in the screenshot using JavascriptExecutor from selenium    
+4. Particular WebElement could be  **highlighted** in the screenshot using JavascriptExecutor from selenium
+
+### CrossBrowser Testing    
+
+### Assertions
 
 # Limitation
 1. Could not write the loging to a file. The log4j2 properties file can create a log file. But could not write to a file
