@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 public class BrowserStackSignUpPage extends Setup {
 
     By Header = By.xpath("//h1");
-    By userName = By.xpath("//*[@id='user_full_name']");
+  public  By userName = By.xpath("//*[@id='user_full_name']");
     By businessEmail = By.xpath("//*[@id='user_email_login']");
     By password = By.xpath("//*[@id='user_password']");
 

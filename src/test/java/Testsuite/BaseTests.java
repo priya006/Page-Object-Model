@@ -10,10 +10,13 @@ import org.testng.annotations.Test;
 import browserStackSetup.Setup;
 import ru.yandex.qatools.ashot.AShot;
 import ru.yandex.qatools.ashot.Screenshot;
+import ru.yandex.qatools.ashot.comparison.ImageDiff;
+import ru.yandex.qatools.ashot.comparison.ImageDiffer;
 import ru.yandex.qatools.ashot.coordinates.WebDriverCoordsProvider;
 
 
 import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
@@ -24,13 +27,42 @@ public class BaseTests extends Setup {
         WebElement element = driver.findElement(browserStackHomePage.getStarted);
         browserStackHomePage.veryHeader();
         takeScreenshot("/Users/pboopathi/Desktop/entirepage.png");
-        String webElementScreenshot = "/Users/pboopathi/Desktop/webelementscreen.png";
-        takeWebElementScreenShot(element,webElementScreenshot,driver);
+       String pathToSaveImage = "/Users/pboopathi/Desktop/webelementscreen.png";
+        takeWebElementScreenShot(element,pathToSaveImage,driver);
         browserStackHomePage.clickOnGetStarted();
+
+    }
+
+    @Test(priority = 2)
+    public void comparing_screenshots() throws IOException {
+
+        //Take userName Webelement screenshot
+        WebElement userNameElement = driver.findElement(browserStackSignUpPage.userName);
+        takeWebElementScreenShot(userNameElement,"/Users/pboopathi/Desktop/userNameExpectedimage.png",driver);
+
+        //Take a particular WebElement Screenshot
+        WebElement Webelement = driver.findElement(browserStackSignUpPage.userName);
+        browserStackSignUpPage.veryHeader();
+
+        Screenshot webElementScreenshot = new AShot().takeScreenshot(driver, Webelement);
+
+        // read the image to compare
+        BufferedImage expectedImage = ImageIO.read(new File("/Users/pboopathi/Desktop/userNameExpectedimage.png"));
+        BufferedImage actualImage = webElementScreenshot.getImage();
+
+        ImageDiffer imageDiffer = new ImageDiffer();
+        ImageDiff diff = imageDiffer.makeDiff(expectedImage,actualImage);
+
+        if(diff.hasDiff()==true) {
+            System.out.println("Images are different");
+        }
+        else
+            System.out.println("Images are same");
     }
 
 
-    @Test(priority = 2)
+
+    @Test(priority = 3)
     @Parameters({"name"})
     public void enter_userDetails(String name){
 
@@ -40,6 +72,7 @@ public class BaseTests extends Setup {
         browserStackSignUpPage.enterPasswrod("TestUserPassword");
 
     }
+
 
     public void takeWebElementScreenShot(WebElement element, String pathname, WebDriver driver) throws IOException {
         Screenshot screenshot  = new AShot().coordsProvider(new WebDriverCoordsProvider()).takeScreenshot(driver,element);
