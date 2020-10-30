@@ -13,6 +13,7 @@ public class PropertyManager {
             "/src/main/resources/config.properties";
     private static String url;
     private static String macChromeDriver;
+    private static String browser;
 
     /**
      * Singleton pattern is used so instantiation can be done only once
@@ -44,6 +45,7 @@ public class PropertyManager {
 
         url = properties.getProperty("url");
         macChromeDriver = properties.getProperty("macChromeDriver");
+        browser = properties.getProperty("browser");
     }
 
     public String getUrl(){
@@ -53,4 +55,11 @@ public class PropertyManager {
     public  String getMacChromeDriver() {
         return macChromeDriver;
     }
+
+    public String getBrowser(){
+        return browser;
+    }
 }
+
+
+

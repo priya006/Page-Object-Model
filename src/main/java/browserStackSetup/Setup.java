@@ -5,12 +5,10 @@ import browserStackPages.BrowserStackHomePage;
 import browserStackPages.BrowserStackSignUpPage;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.core.util.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -50,12 +48,27 @@ public class Setup {
         LOGGER.trace("Tracing");
         LOGGER.info("Chrome Driver Setup");
         LOGGER.debug("some");
-        System.setProperty("webdriver.chrome.driver", macChromeDriver );
+
+        String browser = PropertyManager.getInstance().getBrowser();
+
+        switch (browser){
+            case "chrome":
+                System.setProperty("webdriver.chrome.driver", macChromeDriver );
+                ChromeOptions chromeOptions = new ChromeOptions();
+                chromeOptions.addArguments("start-maximized");
+                driver = new ChromeDriver(chromeOptions);
+                break;
+            case "firefox":
+                System.setProperty("webdriver.gecko.driver", "/Users/pboopathi/Downloads/geckodriver");
+                driver = new FirefoxDriver();
+                break;
+            default:
+                throw new WebDriverException();
+        }
+
         browserStackHomePage =  new BrowserStackHomePage(driver);
         browserStackSignUpPage = new BrowserStackSignUpPage(driver);
-        ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.addArguments("start-maximized");
-         driver = new ChromeDriver(chromeOptions);
+
         String baseUrl = PropertyManager.getInstance().getUrl();
         driver.get(baseUrl);
         String title =   driver.getTitle();
