@@ -36,14 +36,14 @@ public class BaseTests extends Setup {
 
     @Test(priority = 2)
     public void comparing_screenshots() throws IOException {
-
+        browserStackSignUpPage.veryHeader();
         //Take userName Webelement screenshot
         WebElement userNameElement = driver.findElement(browserStackSignUpPage.userName);
         takeWebElementScreenShot(userNameElement,"/Users/pboopathi/Desktop/userNameExpectedimage.png",driver);
 
         //Take a particular WebElement Screenshot
         WebElement Webelement = driver.findElement(browserStackSignUpPage.userName);
-        browserStackSignUpPage.veryHeader();
+
 
         Screenshot webElementScreenshot = new AShot().takeScreenshot(driver, Webelement);
 

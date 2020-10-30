@@ -3,6 +3,10 @@ package browserStackPages;
 import browserStackSetup.Setup;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+
 
 
 public class BrowserStackSignUpPage extends Setup {
@@ -24,6 +28,7 @@ public class BrowserStackSignUpPage extends Setup {
 
     }
     public void enterFullName(String arg1) {
+        new WebDriverWait(driver, 500).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='user_full_name']")));
         driver.findElement(userName).sendKeys(arg1);
     }
     public void enterBusinessEmail(String arg1) {
