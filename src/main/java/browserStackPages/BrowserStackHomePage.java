@@ -21,7 +21,8 @@ public class BrowserStackHomePage extends Setup {
 //        Assert.checkNonNull(getheadertext,"not null");
     }
     public void clickOnGetStarted() throws InterruptedException {
-        WebElement getStartedWebElement = new WebDriverWait((driver),1000).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='signupModalButton']")));
+        WebElement getStartedWebElement = new WebDriverWait((driver),10).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='signupModalButton']")));
+        //This sleep is needed
         Thread.sleep(500);
 //        driver.findElement(getStarted).click();
         getStartedWebElement.click();
