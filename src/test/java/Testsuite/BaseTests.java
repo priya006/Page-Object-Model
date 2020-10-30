@@ -34,7 +34,7 @@ public class BaseTests extends Setup {
 
     }
 
-    @Test(priority = 2)
+    @Test(priority = 3)
     public void comparing_screenshots() throws IOException {
         browserStackSignUpPage.veryHeader();
         //Take userName Webelement screenshot
@@ -63,7 +63,7 @@ public class BaseTests extends Setup {
 
 
 
-    @Test(priority = 3)
+    @Test(priority = 2)
     @Parameters({"name"})
     public void enter_userDetails(String name){
 
