@@ -2,6 +2,7 @@ package Testsuite;
 
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Parameters;
@@ -73,6 +74,20 @@ public class BaseTests extends Setup {
 
     }
 
+
+
+
+
+    @Test(priority = 4)
+    public void highlight_Webelements() throws IOException {
+        WebElement userNameWebElement = driver.findElement(browserStackSignUpPage.userName);
+        JavascriptExecutor javascriptExecutor = (JavascriptExecutor) driver;
+        javascriptExecutor.executeScript("arguments[0].style.border='2px solid red'",userNameWebElement);
+
+        //Take screenshot
+        takeScreenshot("/Users/pboopathi/Desktop/HighlightWebelement.png");
+
+    }
 
     public void takeWebElementScreenShot(WebElement element, String pathname, WebDriver driver) throws IOException {
         Screenshot screenshot  = new AShot().coordsProvider(new WebDriverCoordsProvider()).takeScreenshot(driver,element);
