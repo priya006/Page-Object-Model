@@ -40,9 +40,9 @@ A Selenium Project Built to master Page Factory and POM Structure in Selenium
     **Example:** `   ImageDiff diff = imageDiffer.makeDiff(expectedImage,actualImage);`
 4. Particular WebElement could be  **highlighted** in the screenshot using JavascriptExecutor from selenium
 
-### CrossBrowser Testing 
-  - config.properties 
-  - TestNG    
+### CrossBrowser Testing / Parallel Testing
+  - config.properties could be set with values for the key `browser` and the value could be accessed like `PropertyManager.getInstance().getBrowser()`
+  - TestNG `@Parameters` could be used to execute same test parallelly with multiple browsers   
 
 ### Assertions
 
