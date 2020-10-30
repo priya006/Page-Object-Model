@@ -40,7 +40,9 @@ A Selenium Project Built to master Page Factory and POM Structure in Selenium
     **Example:** `   ImageDiff diff = imageDiffer.makeDiff(expectedImage,actualImage);`
 4. Particular WebElement could be  **highlighted** in the screenshot using JavascriptExecutor from selenium
 
-### CrossBrowser Testing    
+### CrossBrowser Testing 
+  - config.properties 
+  - TestNG    
 
 ### Assertions
 

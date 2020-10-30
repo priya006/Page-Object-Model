@@ -23,7 +23,7 @@ public class BrowserStackHomePage extends Setup {
     public void clickOnGetStarted() throws InterruptedException {
         WebElement getStartedWebElement = new WebDriverWait((driver),10).until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='signupModalButton']")));
         //This sleep is needed
-        Thread.sleep(500);
+        Thread.sleep(1000);
 //        driver.findElement(getStarted).click();
         getStartedWebElement.click();
 
