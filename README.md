@@ -52,3 +52,5 @@ A Selenium Project Built to master Page Factory and POM Structure in Selenium
 
 # Limitation
 1. Could not write the loging to a file. The log4j2 properties file can create a log file. But could not write to a file
+2. While doing parallel testing using TestNG the app gets the `name` entries in firefix browser only as there is a timing issue 
+while clicking he `get started` button
