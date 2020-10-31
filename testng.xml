@@ -4,7 +4,10 @@
     <test name="ChromeTest" >
 <!--        <parameter name="browser" value="firefox" />-->
         <parameter name="browser" value="chrome" />
+
         <parameter name="name" value="Deblyn">
+
+
     </parameter>
 
         <classes>
@@ -20,7 +23,7 @@
 
         <parameter name="name" value="Deblyn"/>
        <classes>
-             <class name="Testsuite.BaseTests"/>
+        <class name="Testsuite.BaseTests"/>
             <class name="browserStackSetup.Setup">
        </class>
 
