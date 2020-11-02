@@ -67,12 +67,12 @@ public class BaseTests extends Setup {
 
 
     @Test(priority = 2, dataProvider = "data-provider", dataProviderClass = DataProvider1.class)
-    @Parameters({"name"})
+  //  @Parameters({"name"})
 
-    public void enter_userDetails(String name, String email ){
+    public void enter_userDetails(String email){
 
         //browserStackSignUpPage.veryHeader();
-        browserStackSignUpPage.enterFullName(name);
+        browserStackSignUpPage.enterFullName("priya123");
         browserStackSignUpPage.enterBusinessEmail(email);
         browserStackSignUpPage.enterPasswrod("TestUserPassword");
 
