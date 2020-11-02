@@ -5,10 +5,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.testng.annotations.Parameters;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters
+        ;
 import org.testng.annotations.Test;
 
 import browserStackSetup.Setup;
+import DataProvider.*;
 import ru.yandex.qatools.ashot.AShot;
 import ru.yandex.qatools.ashot.Screenshot;
 import ru.yandex.qatools.ashot.comparison.ImageDiff;
@@ -63,13 +66,14 @@ public class BaseTests extends Setup {
 
 
 
-    @Test(priority = 2)
+    @Test(priority = 2, dataProvider = "data-provider", dataProviderClass = DataProvider1.class)
     @Parameters({"name"})
-    public void enter_userDetails(String name){
+
+    public void enter_userDetails(String name, String email ){
 
         //browserStackSignUpPage.veryHeader();
         browserStackSignUpPage.enterFullName(name);
-        browserStackSignUpPage.enterBusinessEmail("TestUser@gmail.com");
+        browserStackSignUpPage.enterBusinessEmail(email);
         browserStackSignUpPage.enterPasswrod("TestUserPassword");
 
     }
