@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.testng.Reporter;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters
         ;
@@ -28,6 +29,7 @@ public class BaseTests extends Setup {
 
     @Test(priority = 1)
     public void navigate_to_home_page() throws IOException, InterruptedException {
+        Reporter.log("This test verifies the current selenium compatibility with TestNG by launching the chrome driver");
         WebElement element = driver.findElement(browserStackHomePage.getStarted);
         browserStackHomePage.veryHeader();
         takeScreenshot("/Users/pboopathi/Desktop/entirepage.png");

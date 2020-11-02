@@ -46,12 +46,15 @@ A Selenium Project Built to master Page Factory and POM Structure in Selenium
 
 ### Assertions
 
+### Data-Driven Testing
+
 ## Hierarchy of Execution in TestNG
 ![Execution](https://github.com/priya006/Page_Object_Model/blob/master/TestNG.png)
 
 
 # Limitation
 1. Could not write the loging to a file. The log4j2 properties file can create a log file. But could not write to a file
+
 
 Reference
 ------------------------------------
