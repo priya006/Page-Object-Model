@@ -81,7 +81,7 @@ public class Setup {
 //    }
 
 
-    @BeforeTest
+    @BeforeMethod
     @Parameters({"browser"})
     public void setup(String browser) throws Exception{
               String macChromeDriver =  PropertyManager.getInstance().getMacChromeDriver();
@@ -126,7 +126,7 @@ public class Setup {
 
 
 
-    @AfterSuite
+    @AfterMethod
     public void TearDown(){
         LOGGER.info("TearDown");
         driver.quit();
