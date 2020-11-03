@@ -100,4 +100,17 @@ public class BaseTests extends Setup {
         ImageIO.write(screenshot.getImage(), "PNG", new File(pathname));
     }
 
+    @Test(priority = 5, dataProvider = "excel-data")
+    //  @Parameters({"name"})
+
+    public void DataDrivenTesting(String name, String emailaddress){
+
+        //browserStackSignUpPage.veryHeader();
+        browserStackSignUpPage.enterFullName(name);
+        browserStackSignUpPage.enterBusinessEmail(emailaddress);
+        browserStackSignUpPage.enterPasswrod("TestUserPassword");
+
+    }
+
+
 }
