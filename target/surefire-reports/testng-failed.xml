@@ -12,6 +12,8 @@
           <include name="enter_userDetails"/>
           <include name="TearDown"/>
           <include name="TearDown"/>
+          <include name="comparing_screenshots"/>
+          <include name="highlight_Webelements"/>
         </methods>
       </class> <!-- Testsuite.BaseTests -->
     </classes>

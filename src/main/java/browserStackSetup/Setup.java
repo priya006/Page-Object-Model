@@ -85,14 +85,15 @@ public class Setup {
     @Parameters({"browser"})
     public void setup(String browser) throws Exception{
               String macChromeDriver =  PropertyManager.getInstance().getMacChromeDriver();
-        LOGGER.trace("Tracing");
+        LOGGER.trace("Tracing logger testing");
         LOGGER.info("Chrome Driver Setup");
-        LOGGER.debug("some");
+//        LOGGER.debug("");
         //Check if parameter passed from TestNG is 'firefox'
         if(browser.equalsIgnoreCase("firefox")){
             //create firefox instance
             System.setProperty("webdriver.gecko.driver", "/Users/pboopathi/Downloads/geckodriver");
             driver = new FirefoxDriver();
+            LOGGER.info("Firefox Driver is instantiated");
         }
         //Check if parameter passed as 'chrome'
         else if(browser.equalsIgnoreCase("chrome")){
@@ -101,6 +102,7 @@ public class Setup {
             //create chrome instance
             ChromeOptions chromeOptions = new ChromeOptions();
           driver = new ChromeDriver(chromeOptions);
+            LOGGER.info("Chrome Driver is instantiated");
                 chromeOptions.addArguments("start-maximized");
         }
 
@@ -128,7 +130,7 @@ public class Setup {
 
     @AfterMethod
     public void TearDown(){
-        LOGGER.info("TearDown");
+        LOGGER.info("TearDown Method is called and browser is quitted");
         driver.quit();
 
     }

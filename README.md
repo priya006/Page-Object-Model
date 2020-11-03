@@ -51,7 +51,9 @@ A Selenium Project Built to master Page Factory and POM Structure in Selenium
 Data is entered in the spread sheet `TestData`. The class `DataProviderForExcel` reads the data from the spreadsheet and feeds into the test with the help of TestNG @Dataprovider annotation.
 
 ### How to execute a particular Suite Xml file using TestNG Maven surefire plugin
-Run the test using maven sure fire plugin with commands `mvn clean install` and `mvn test`
+1. Run the test using maven sure fire plugin with commands `mvn clean install` and `mvn test`
+2. The plugin gives sure-fire reports at the end of the run in IDE console
+
 ```
 <build>
         <plugins>
