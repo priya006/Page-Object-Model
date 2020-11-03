@@ -3,7 +3,7 @@ package DataProvider;
 import org.testng.annotations.Test;
 import org.testng.annotations.DataProvider;
 
-public class DataProvider1 {
+public class DataProviderMethod {
 
 @DataProvider (name = "data-provider", parallel = false)
 public Object[][] dataProviderMethod(){

@@ -68,7 +68,7 @@ public class BaseTests extends Setup {
 
 
 
-    @Test(priority = 2, dataProvider = "data-provider", dataProviderClass = DataProvider1.class)
+    @Test(priority = 2, dataProvider = "data-provider", dataProviderClass = DataProviderMethod.class)
   //  @Parameters({"name"})
 
     public void enter_userDetails(String email){
