@@ -48,6 +48,42 @@ A Selenium Project Built to master Page Factory and POM Structure in Selenium
 ### Assertions
 
 ### Data-Driven Testing
+Data is entered in the spread sheet `TestData`. The class `DataProviderForExcel` reads the data from the spreadsheet and feeds into the test with the help of TestNG @Dataprovider annotation.
+
+### How to execute a particular Suite Xml file using TestNG Maven surefire plugin
+Run the test using maven sure fire plugin with commands `mvn clean install` and `mvn test`
+```
+<build>
+        <plugins>
+            <!-- Following plugin executes the testng tests -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M5</version>
+                <configuration>
+                    <!-- Suite testng xml file to consider for test execution -->
+                    <suiteXmlFiles>
+                        <suiteXmlFile>/Users/pboopathi/Documents/Priya/PETproject/Selenium_POM_Project/testng.xml</suiteXmlFile>/
+<!--                        <suiteXmlFile>suites-test-testng.xml</suiteXmlFile>-->
+<!--                        <suiteXmlFile>src/test/resources/test_parameters.xml</suiteXmlFile>-->
+
+                    </suiteXmlFiles>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>7</source>
+                    <target>7</target>
+                </configuration>
+            </plugin>
+        </plugins>
+
+
+    </build>
+```
+
 
 ## Hierarchy of Execution in TestNG
 ![Execution](https://github.com/priya006/Page_Object_Model/blob/master/TestNG.png)

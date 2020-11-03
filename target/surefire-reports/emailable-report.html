@@ -31,60 +31,27 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Surefire test</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi_attn">1</td><td class="numi">0.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">ChromeTest</td><td class="numi">3</td><td class="numi">3</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">26.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">FirefoxTest</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi_attn">3</td><td class="numi">33.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="total"><td>Total</td>
+<td class="numi">4</td><td class="numi">4</td><td class="numi">0</td><td class="numi_attn">4</td><td class="numi">59.7 seconds</td><td colspan="2">&nbsp;</td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Surefire test &#8212; failed (configuration methods)</th></tr>
-<tr class="failedodd"><td rowspan="1">Testsuite.BaseTests</td><td><a href="#m1"><b>setup</b>  </a></td><td class="numi">1</td><td>1604382221943</td><td class="numi">0</td></tr>
-<tr><th colspan="4">Surefire test &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="1">Testsuite.BaseTests</td><td><a href="#m2"><b>DataDrivenTesting</b>  </a></td><td class="numi">1</td><td>1604382221952</td><td class="numi">0</td></tr>
-<tr><th colspan="4">Surefire test &#8212; skipped (configuration methods)</th></tr>
-<tr class="skippedodd"><td rowspan="1">Testsuite.BaseTests</td><td><a href="#m3"><b>TearDown</b>  </a></td><td class="numi">1</td><td>1604382221949</td><td class="numi">0</td></tr>
-<tr><th colspan="4">Surefire test &#8212; skipped</th></tr>
-<tr class="skippedodd"><td rowspan="1">Testsuite.BaseTests</td><td><a href="#m4"><b>navigate_to_home_page</b>  </a></td><td class="numi">1</td><td>1604382221946</td><td class="numi">3</td></tr>
+<tr><th colspan="4">ChromeTest &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">Testsuite.BaseTests</td><td><a href="#m1"><b>enter_userDetails</b>  </a></td><td class="numi">1</td><td>1604421255017</td><td class="numi">0</td></tr>
+<tr><th colspan="4">ChromeTest &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="3">Testsuite.BaseTests</td><td><a href="#m2"><b>navigate_to_home_page</b>  </a></td><td class="numi">1</td><td>1604421251571</td><td class="numi">3339</td></tr><tr class="passedodd"><td><a href="#m3"><b>comparing_screenshots</b>  </a></td><td class="numi">1</td><td>1604421256559</td><td class="numi">10419</td></tr><tr class="passedodd"><td><a href="#m4"><b>highlight_Webelements</b>  </a></td><td class="numi">1</td><td>1604421269867</td><td class="numi">4703</td></tr>
+<tr><th colspan="4">FirefoxTest &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="3">Testsuite.BaseTests</td><td><a href="#m5"><b>comparing_screenshots</b>  </a></td><td class="numi">1</td><td>1604421284171</td><td class="numi">10124</td></tr><tr class="failedodd"><td><a href="#m6"><b>highlight_Webelements</b>  </a></td><td class="numi">1</td><td>1604421297600</td><td class="numi">10025</td></tr><tr class="failedodd"><td><a href="#m7"><b>enter_userDetails</b>  </a></td><td class="numi">1</td><td>1604421281312</td><td class="numi">0</td></tr>
+<tr><th colspan="4">FirefoxTest &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">Testsuite.BaseTests</td><td><a href="#m8"><b>navigate_to_home_page</b>  </a></td><td class="numi">1</td><td>1604421278276</td><td class="numi">2591</td></tr>
 </table>
-<h1>Surefire test</h1>
-<h2 id="m1">Testsuite.BaseTests:setup</h2>
+<h1>ChromeTest</h1>
+<h2 id="m1">Testsuite.BaseTests:enter_userDetails</h2>
 <div style="padding-left:3em">
 <p>
-Parameter &apos;browser&apos; is required by @Configuration on method setup but has not been marked @Optional or defined
-</p>
-org.testng.internal.Parameters.createParameters(Parameters.java:155)
-<br/>at org.testng.internal.Parameters.createParameters(Parameters.java:355)
-<br/>at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:86)
-<br/>at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:199)
-<br/>at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
-<br/>at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-<br/>at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-<br/>at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-<br/>at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-<br/>at org.testng.TestRunner.privateRun(TestRunner.java:767)
-<br/>at org.testng.TestRunner.run(TestRunner.java:617)
-<br/>at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-<br/>at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-<br/>at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-<br/>at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-<br/>at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-<br/>at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-<br/>at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-<br/>at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-<br/>at org.testng.TestNG.run(TestNG.java:1031)
-<br/>at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)
-<br/>at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
-<br/>at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-<br/>at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)
-<br/>at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
-<br/>at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-<br/>at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
-<br/>at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
-<br/>1 lines not shown
-</div>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">Testsuite.BaseTests:DataDrivenTesting</h2>
-<div style="padding-left:3em">
-<p>
-DataProvider should be static: public java.lang.Object[][] DataProvider.DataProviderForExcel.excelDP() throws java.io.IOException</p>
+DataProvider should be static: public java.lang.Object[][] DataProvider.DataProviderMethod.dataProviderMethod()</p>
 org.testng.internal.Parameters.findDataProvider(Parameters.java:328)
 <br/>at org.testng.internal.Parameters.findDataProvider(Parameters.java:262)
 <br/>at org.testng.internal.Parameters.handleParameters(Parameters.java:414)
@@ -104,10 +71,9 @@ org.testng.internal.Parameters.findDataProvider(Parameters.java:328)
 <br/>at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
 <br/>at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
 <br/>at org.testng.TestNG.run(TestNG.java:1031)
-<br/>at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)
-<br/>at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
-<br/>at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-<br/>at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)
+<br/>at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+<br/>at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+<br/>at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
 <br/>at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
 <br/>at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 <br/>at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
@@ -115,8 +81,108 @@ org.testng.internal.Parameters.findDataProvider(Parameters.java:328)
 <br/>1 lines not shown
 </div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m3">Testsuite.BaseTests:TearDown</h2>
+<h2 id="m2">Testsuite.BaseTests:navigate_to_home_page</h2>
+<div style="padding-left:3em">
+This test verifies the current selenium compatibility with TestNG by launching the chrome driver<br/>
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m4">Testsuite.BaseTests:navigate_to_home_page</h2>
+<h2 id="m3">Testsuite.BaseTests:highlight_Webelements</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">Testsuite.BaseTests:comparing_screenshots</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>FirefoxTest</h1>
+<h2 id="m5">Testsuite.BaseTests:highlight_Webelements</h2>
+<div style="padding-left:3em">
+<p>Unable to locate element: //*[@id=&apos;user_full_name&apos;]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LM-AUN-11022030&apos;, ip: &apos;192.168.0.163&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.4&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 81.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201012085804, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 33596, moz:profile: /var/folders/7d/lvbycdhd0kz..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 19.4.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d2a535c0-3efd-e247-b913-e837816893e4
+*** Element info: {Using=xpath, value=//*[@id=&apos;user_full_name&apos;]}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+<br/>at Testsuite.BaseTests.highlight_Webelements(BaseTests.java:89)
+<br/>29 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">Testsuite.BaseTests:enter_userDetails</h2>
+<div style="padding-left:3em">
+<p>
+DataProvider should be static: public java.lang.Object[][] DataProvider.DataProviderMethod.dataProviderMethod()</p>
+org.testng.internal.Parameters.findDataProvider(Parameters.java:328)
+<br/>at org.testng.internal.Parameters.findDataProvider(Parameters.java:262)
+<br/>at org.testng.internal.Parameters.handleParameters(Parameters.java:414)
+<br/>at org.testng.internal.Invoker.handleParameters(Invoker.java:1383)
+<br/>at org.testng.internal.Invoker.createParameters(Invoker.java:1075)
+<br/>at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1180)
+<br/>at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+<br/>at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+<br/>at org.testng.TestRunner.privateRun(TestRunner.java:767)
+<br/>at org.testng.TestRunner.run(TestRunner.java:617)
+<br/>at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+<br/>at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+<br/>at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+<br/>at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+<br/>at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+<br/>at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+<br/>at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+<br/>at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+<br/>at org.testng.TestNG.run(TestNG.java:1031)
+<br/>at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+<br/>at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+<br/>at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+<br/>at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+<br/>1 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">Testsuite.BaseTests:comparing_screenshots</h2>
+<div style="padding-left:3em">
+<p>Unable to locate element: //*[@id=&apos;user_full_name&apos;]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LM-AUN-11022030&apos;, ip: &apos;192.168.0.163&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.4&apos;, java.version: &apos;1.8.0_251&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 81.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201012085804, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 33582, moz:profile: /var/folders/7d/lvbycdhd0kz..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 19.4.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 73730f34-7500-834b-b4cc-08c4c5d1c010
+*** Element info: {Using=xpath, value=//*[@id=&apos;user_full_name&apos;]}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+<br/>at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+<br/>at Testsuite.BaseTests.comparing_screenshots(BaseTests.java:46)
+<br/>29 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">Testsuite.BaseTests:navigate_to_home_page</h2>
+<div style="padding-left:3em">
+This test verifies the current selenium compatibility with TestNG by launching the chrome driver<br/>
+</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

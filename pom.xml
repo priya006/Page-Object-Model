@@ -17,8 +17,10 @@
                 <configuration>
                     <!-- Suite testng xml file to consider for test execution -->
                     <suiteXmlFiles>
-<!--                        <suiteXmlFile>testng.xml</suiteXmlFile>/-->
+                        <suiteXmlFile>/Users/pboopathi/Documents/Priya/PETproject/Selenium_POM_Project/testng.xml</suiteXmlFile>/
 <!--                        <suiteXmlFile>suites-test-testng.xml</suiteXmlFile>-->
+<!--                        <suiteXmlFile>src/test/resources/test_parameters.xml</suiteXmlFile>-->
+
                     </suiteXmlFiles>
                 </configuration>
             </plugin>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="60.669" tests="8" errors="0" skipped="2" failures="2">
+  <properties>
+    <property name="gopherProxySet" value="false"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="webdriver.chrome.driver" value="/Users/pboopathi/Downloads/chromedriver"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/pboopathi/Documents/Priya/PETproject/Selenium_POM_Project/target/test-classes:/Users/pboopathi/Documents/Priya/PETproject/Selenium_POM_Project/target/classes:/Users/pboopathi/.m2/raptor2/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/pboopathi/.m2/raptor2/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/pboopathi/.m2/raptor2/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/pboopathi/.m2/raptor2/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/pboopathi/.m2/raptor2/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/pboopathi/.m2/raptor2/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/pboopathi/.m2/raptor2/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/pboopathi/.m2/raptor2/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/pboopathi/.m2/raptor2/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/pboopathi/.m2/raptor2/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/pboopathi/.m2/raptor2/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/pboopathi/.m2/raptor2/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/pboopathi/.m2/raptor2/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/pboopathi/.m2/raptor2/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/pboopathi/.m2/raptor2/org/testng/testng/6.8/testng-6.8.jar:/Users/pboopathi/.m2/raptor2/junit/junit/4.10/junit-4.10.jar:/Users/pboopathi/.m2/raptor2/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar:/Users/pboopathi/.m2/raptor2/com/beust/jcommander/1.27/jcommander-1.27.jar:/Users/pboopathi/.m2/raptor2/org/yaml/snakeyaml/1.6/snakeyaml-1.6.jar:/Users/pboopathi/.m2/raptor2/org/apache/logging/log4j/log4j-core/2.6.2/log4j-core-2.6.2.jar:/Users/pboopathi/.m2/raptor2/org/apache/logging/log4j/log4j-api/2.6.2/log4j-api-2.6.2.jar:/Users/pboopathi/.m2/raptor2/ru/yandex/qatools/ashot/ashot/1.5.4/ashot-1.5.4.jar:/Users/pboopathi/.m2/raptor2/commons-io/commons-io/2.5/commons-io-2.5.jar:/Users/pboopathi/.m2/raptor2/com/google/code/gson/gson/2.6.2/gson-2.6.2.jar:/Users/pboopathi/.m2/raptor2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/pboopathi/.m2/raptor2/com/google/guava/guava/28.0-jre/guava-28.0-jre.jar:/Users/pboopathi/.m2/raptor2/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/pboopathi/.m2/raptor2/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/pboopathi/.m2/raptor2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/pboopathi/.m2/raptor2/org/checkerframework/checker-qual/2.8.1/checker-qual-2.8.1.jar:/Users/pboopathi/.m2/raptor2/com/google/errorprone/error_prone_annotations/2.3.2/error_prone_annotations-2.3.2.jar:/Users/pboopathi/.m2/raptor2/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/pboopathi/.m2/raptor2/org/codehaus/mojo/animal-sniffer-annotations/1.17/animal-sniffer-annotations-1.17.jar:/Users/pboopathi/.m2/raptor2/org/apache/poi/poi/3.17/poi-3.17.jar:/Users/pboopathi/.m2/raptor2/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/pboopathi/.m2/raptor2/org/apache/commons/commons-collections4/4.1/commons-collections4-4.1.jar:/Users/pboopathi/.m2/raptor2/org/apache/poi/poi-ooxml/3.9/poi-ooxml-3.9.jar:/Users/pboopathi/.m2/raptor2/org/apache/poi/poi-ooxml-schemas/3.9/poi-ooxml-schemas-3.9.jar:/Users/pboopathi/.m2/raptor2/org/apache/xmlbeans/xmlbeans/2.3.0/xmlbeans-2.3.0.jar:/Users/pboopathi/.m2/raptor2/stax/stax-api/1.0.1/stax-api-1.0.1.jar:/Users/pboopathi/.m2/raptor2/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar:/Users/pboopathi/.m2/raptor2/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.font.fontmanager" value="sun.font.CFontManager"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib"/>
+    <property name="sun.java.command" value="/Users/pboopathi/Documents/Priya/PETproject/Selenium_POM_Project/target/surefire/surefirebooter7267720084122571238.jar /Users/pboopathi/Documents/Priya/PETproject/Selenium_POM_Project/target/surefire 2020-11-03T08-34-06_953-jvmRun1 surefire4398943211826019147tmp surefire_04132139563291966831tmp"/>
+    <property name="surefire.test.class.path" value="/Users/pboopathi/Documents/Priya/PETproject/Selenium_POM_Project/target/test-classes:/Users/pboopathi/Documents/Priya/PETproject/Selenium_POM_Project/target/classes:/Users/pboopathi/.m2/raptor2/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/pboopathi/.m2/raptor2/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/pboopathi/.m2/raptor2/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/pboopathi/.m2/raptor2/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/pboopathi/.m2/raptor2/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/pboopathi/.m2/raptor2/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/pboopathi/.m2/raptor2/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/pboopathi/.m2/raptor2/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/pboopathi/.m2/raptor2/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/pboopathi/.m2/raptor2/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/pboopathi/.m2/raptor2/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/pboopathi/.m2/raptor2/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/pboopathi/.m2/raptor2/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/pboopathi/.m2/raptor2/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/pboopathi/.m2/raptor2/org/testng/testng/6.8/testng-6.8.jar:/Users/pboopathi/.m2/raptor2/junit/junit/4.10/junit-4.10.jar:/Users/pboopathi/.m2/raptor2/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar:/Users/pboopathi/.m2/raptor2/com/beust/jcommander/1.27/jcommander-1.27.jar:/Users/pboopathi/.m2/raptor2/org/yaml/snakeyaml/1.6/snakeyaml-1.6.jar:/Users/pboopathi/.m2/raptor2/org/apache/logging/log4j/log4j-core/2.6.2/log4j-core-2.6.2.jar:/Users/pboopathi/.m2/raptor2/org/apache/logging/log4j/log4j-api/2.6.2/log4j-api-2.6.2.jar:/Users/pboopathi/.m2/raptor2/ru/yandex/qatools/ashot/ashot/1.5.4/ashot-1.5.4.jar:/Users/pboopathi/.m2/raptor2/commons-io/commons-io/2.5/commons-io-2.5.jar:/Users/pboopathi/.m2/raptor2/com/google/code/gson/gson/2.6.2/gson-2.6.2.jar:/Users/pboopathi/.m2/raptor2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/pboopathi/.m2/raptor2/com/google/guava/guava/28.0-jre/guava-28.0-jre.jar:/Users/pboopathi/.m2/raptor2/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/pboopathi/.m2/raptor2/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/pboopathi/.m2/raptor2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/pboopathi/.m2/raptor2/org/checkerframework/checker-qual/2.8.1/checker-qual-2.8.1.jar:/Users/pboopathi/.m2/raptor2/com/google/errorprone/error_prone_annotations/2.3.2/error_prone_annotations-2.3.2.jar:/Users/pboopathi/.m2/raptor2/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/pboopathi/.m2/raptor2/org/codehaus/mojo/animal-sniffer-annotations/1.17/animal-sniffer-annotations-1.17.jar:/Users/pboopathi/.m2/raptor2/org/apache/poi/poi/3.17/poi-3.17.jar:/Users/pboopathi/.m2/raptor2/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/pboopathi/.m2/raptor2/org/apache/commons/commons-collections4/4.1/commons-collections4-4.1.jar:/Users/pboopathi/.m2/raptor2/org/apache/poi/poi-ooxml/3.9/poi-ooxml-3.9.jar:/Users/pboopathi/.m2/raptor2/org/apache/poi/poi-ooxml-schemas/3.9/poi-ooxml-schemas-3.9.jar:/Users/pboopathi/.m2/raptor2/org/apache/xmlbeans/xmlbeans/2.3.0/xmlbeans-2.3.0.jar:/Users/pboopathi/.m2/raptor2/stax/stax-api/1.0.1/stax-api-1.0.1.jar:/Users/pboopathi/.m2/raptor2/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar:/Users/pboopathi/.m2/raptor2/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/pboopathi"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre"/>
+    <property name="basedir" value="/Users/pboopathi/Documents/Priya/PETproject/Selenium_POM_Project"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/Users/pboopathi/Documents/Priya/PETproject/Selenium_POM_Project/target/surefire/surefirebooter7267720084122571238.jar"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_251-b08"/>
+    <property name="user.name" value="pboopathi"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="10.15.4"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/pboopathi/.m2/raptor2"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/7d/lvbycdhd0kzcjgw3h8d621jm39d8_c/T/"/>
+    <property name="java.version" value="1.8.0_251"/>
+    <property name="user.dir" value="/Users/pboopathi/Documents/Priya/PETproject/Selenium_POM_Project"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="webdriver.gecko.driver" value="/Users/pboopathi/Downloads/geckodriver"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/Users/pboopathi/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.251-b08"/>
+    <property name="java.ext.dirs" value="/Users/pboopathi/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="navigate_to_home_page" classname="Testsuite.BaseTests" time="3.323">
+    <system-out><![CDATA[[INFO ] 2020-11-03 08:34:08.380 [main] Setup - Test completed
+[INFO ] 2020-11-03 08:34:08.382 [main] Setup - Test completed
+[INFO ] 2020-11-03 08:34:08.402 [main] Setup - Test completed
+[INFO ] 2020-11-03 08:34:08.402 [main] Setup - Test completed
+[TRACE] 2020-11-03 08:34:08.416 [main] Setup - Tracing
+[INFO ] 2020-11-03 08:34:08.417 [main] Setup - Chrome Driver Setup
+[DEBUG] 2020-11-03 08:34:08.417 [main] Setup - some
+[INFO ] 2020-11-03 08:34:10.918 [main] Setup - Test completed
+[INFO ] 2020-11-03 08:34:10.920 [main] Setup - Test completed
+Most Reliable App & Cross Browser Testing Platform | BrowserStack
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}) on port 12769
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1604421248.577][WARNING]: FromSockAddr failed on netmask
+ChromeDriver was started successfully.
+Nov 03, 2020 8:34:10 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="navigate_to_home_page" classname="Testsuite.BaseTests" time="2.586">
+    <system-out><![CDATA[[INFO ] 2020-11-03 08:34:34.570 [main] Setup - TearDown
+[TRACE] 2020-11-03 08:34:34.675 [main] Setup - Tracing
+[INFO ] 2020-11-03 08:34:34.675 [main] Setup - Chrome Driver Setup
+[DEBUG] 2020-11-03 08:34:34.675 [main] Setup - some
+[INFO ] 2020-11-03 08:34:37.632 [main] Setup - Test completed
+[INFO ] 2020-11-03 08:34:37.632 [main] Setup - Test completed
+Most Reliable App & Cross Browser Testing Platform | BrowserStack
+]]></system-out>
+    <system-err><![CDATA[1604421274717	geckodriver	INFO	Listening on 127.0.0.1:23325
+1604421274740	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/7d/lvbycdhd0kzcjgw3h8d621jm39d8_c/T/rust_mozprofilelyi9mW"
+console.error: Policies.jsm: 
+  Invalid ExtensionSettings
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1604421277517	Marionette	INFO	Listening on port 50698
+1604421277568	Marionette	WARN	TLS certificate errors will be ignored for this session
+Nov 03, 2020 8:34:37 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="enter_userDetails" classname="Testsuite.BaseTests" time="0">
+    <skipped message="&#10;DataProvider should be static: public java.lang.Object[][] DataProvider.DataProviderMethod.dataProviderMethod()"/>
+    <system-out><![CDATA[[INFO ] 2020-11-03 08:34:14.911 [main] Setup - TearDown
+]]></system-out>
+  </testcase>
+  <testcase name="enter_userDetails" classname="Testsuite.BaseTests" time="0">
+    <skipped message="&#10;DataProvider should be static: public java.lang.Object[][] DataProvider.DataProviderMethod.dataProviderMethod()"/>
+    <system-out><![CDATA[[INFO ] 2020-11-03 08:34:40.867 [main] Setup - TearDown
+]]></system-out>
+    <system-err><![CDATA[1604421280869	Marionette	INFO	Stopped listening on port 50698
+]]></system-err>
+  </testcase>
+  <testcase name="comparing_screenshots" classname="Testsuite.BaseTests" time="10.413">
+    <system-out><![CDATA[[TRACE] 2020-11-03 08:34:15.018 [main] Setup - Tracing
+[INFO ] 2020-11-03 08:34:15.018 [main] Setup - Chrome Driver Setup
+[DEBUG] 2020-11-03 08:34:15.018 [main] Setup - some
+[INFO ] 2020-11-03 08:34:16.024 [main] Setup - Test completed
+[INFO ] 2020-11-03 08:34:16.024 [main] Setup - Test completed
+Most Reliable App & Cross Browser Testing Platform | BrowserStack
+Images are same
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}) on port 43649
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1604421255.044][WARNING]: FromSockAddr failed on netmask
+ChromeDriver was started successfully.
+Nov 03, 2020 8:34:16 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="comparing_screenshots" classname="Testsuite.BaseTests" time="10.126">
+    <failure message="Unable to locate element: //*[@id=&apos;user_full_name&apos;]&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;LM-AUN-11022030&apos;, ip: &apos;192.168.0.163&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.4&apos;, java.version: &apos;1.8.0_251&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 81.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201012085804, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 33582, moz:profile: /var/folders/7d/lvbycdhd0kz..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 19.4.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 73730f34-7500-834b-b4cc-08c4c5d1c010&#10;*** Element info: {Using=xpath, value=//*[@id=&apos;user_full_name&apos;]}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: //*[@id='user_full_name']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LM-AUN-11022030', ip: '192.168.0.163', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.4', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 81.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201012085804, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 33582, moz:profile: /var/folders/7d/lvbycdhd0kz..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 19.4.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 73730f34-7500-834b-b4cc-08c4c5d1c010
+*** Element info: {Using=xpath, value=//*[@id='user_full_name']}
+	at Testsuite.BaseTests.comparing_screenshots(BaseTests.java:46)
+]]></failure>
+    <system-out><![CDATA[[TRACE] 2020-11-03 08:34:41.313 [main] Setup - Tracing
+[INFO ] 2020-11-03 08:34:41.313 [main] Setup - Chrome Driver Setup
+[DEBUG] 2020-11-03 08:34:41.313 [main] Setup - some
+[INFO ] 2020-11-03 08:34:43.540 [main] Setup - Test completed
+[INFO ] 2020-11-03 08:34:43.541 [main] Setup - Test completed
+Most Reliable App & Cross Browser Testing Platform | BrowserStack
+]]></system-out>
+    <system-err><![CDATA[1604421281329	geckodriver	INFO	Listening on 127.0.0.1:37929
+1604421281441	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/7d/lvbycdhd0kzcjgw3h8d621jm39d8_c/T/rust_mozprofileroFrJ0"
+console.error: Policies.jsm: 
+  Invalid ExtensionSettings
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1604421283497	Marionette	INFO	Listening on port 50873
+1604421283515	Marionette	WARN	TLS certificate errors will be ignored for this session
+Nov 03, 2020 8:34:43 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="highlight_Webelements" classname="Testsuite.BaseTests" time="4.696">
+    <system-out><![CDATA[[INFO ] 2020-11-03 08:34:26.978 [main] Setup - TearDown
+[TRACE] 2020-11-03 08:34:27.083 [main] Setup - Tracing
+[INFO ] 2020-11-03 08:34:27.083 [main] Setup - Chrome Driver Setup
+[DEBUG] 2020-11-03 08:34:27.083 [main] Setup - some
+[INFO ] 2020-11-03 08:34:28.158 [main] Setup - Test completed
+[INFO ] 2020-11-03 08:34:28.158 [main] Setup - Test completed
+Most Reliable App & Cross Browser Testing Platform | BrowserStack
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}) on port 8135
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1604421267.110][WARNING]: FromSockAddr failed on netmask
+ChromeDriver was started successfully.
+Nov 03, 2020 8:34:28 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="highlight_Webelements" classname="Testsuite.BaseTests" time="10.023">
+    <failure message="Unable to locate element: //*[@id=&apos;user_full_name&apos;]&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;LM-AUN-11022030&apos;, ip: &apos;192.168.0.163&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.4&apos;, java.version: &apos;1.8.0_251&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 81.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201012085804, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 33596, moz:profile: /var/folders/7d/lvbycdhd0kz..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 19.4.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: d2a535c0-3efd-e247-b913-e837816893e4&#10;*** Element info: {Using=xpath, value=//*[@id=&apos;user_full_name&apos;]}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: //*[@id='user_full_name']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LM-AUN-11022030', ip: '192.168.0.163', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.4', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 81.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201012085804, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 33596, moz:profile: /var/folders/7d/lvbycdhd0kz..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 19.4.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d2a535c0-3efd-e247-b913-e837816893e4
+*** Element info: {Using=xpath, value=//*[@id='user_full_name']}
+	at Testsuite.BaseTests.highlight_Webelements(BaseTests.java:89)
+]]></failure>
+    <system-out><![CDATA[[INFO ] 2020-11-03 08:34:54.299 [main] Setup - TearDown
+[TRACE] 2020-11-03 08:34:54.743 [main] Setup - Tracing
+[INFO ] 2020-11-03 08:34:54.743 [main] Setup - Chrome Driver Setup
+[DEBUG] 2020-11-03 08:34:54.743 [main] Setup - some
+[INFO ] 2020-11-03 08:34:56.981 [main] Setup - Test completed
+[INFO ] 2020-11-03 08:34:56.981 [main] Setup - Test completed
+Most Reliable App & Cross Browser Testing Platform | BrowserStack
+]]></system-out>
+    <system-err><![CDATA[1604421294302	Marionette	INFO	Stopped listening on port 50873
+1604421294756	geckodriver	INFO	Listening on 127.0.0.1:43897
+1604421294765	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/7d/lvbycdhd0kzcjgw3h8d621jm39d8_c/T/rust_mozprofilecDZz95"
+console.error: Policies.jsm: 
+  Invalid ExtensionSettings
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1604421296863	Marionette	INFO	Listening on port 51002
+1604421296939	Marionette	WARN	TLS certificate errors will be ignored for this session
+Nov 03, 2020 8:34:56 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+</testsuite>

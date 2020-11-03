@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 2, Errors: 0, Skipped: 2, Time elapsed: 60.669 s <<< FAILURE! - in TestSuite
+Testsuite.BaseTests.comparing_screenshots  Time elapsed: 10.126 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: //*[@id='user_full_name']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LM-AUN-11022030', ip: '192.168.0.163', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.4', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 81.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201012085804, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 33582, moz:profile: /var/folders/7d/lvbycdhd0kz..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 19.4.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 73730f34-7500-834b-b4cc-08c4c5d1c010
+*** Element info: {Using=xpath, value=//*[@id='user_full_name']}
+	at Testsuite.BaseTests.comparing_screenshots(BaseTests.java:46)
+
+Testsuite.BaseTests.highlight_Webelements  Time elapsed: 10.023 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: //*[@id='user_full_name']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LM-AUN-11022030', ip: '192.168.0.163', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.4', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 81.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201012085804, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 33596, moz:profile: /var/folders/7d/lvbycdhd0kz..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 19.4.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d2a535c0-3efd-e247-b913-e837816893e4
+*** Element info: {Using=xpath, value=//*[@id='user_full_name']}
+	at Testsuite.BaseTests.highlight_Webelements(BaseTests.java:89)
+
