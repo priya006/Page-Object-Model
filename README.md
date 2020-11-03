@@ -52,7 +52,8 @@ Data is entered in the spread sheet `TestData`. The class `DataProviderForExcel`
 
 ### How to execute a particular Suite Xml file using TestNG Maven surefire plugin
 1. Run the test using maven sure fire plugin with commands `mvn clean install` and `mvn test`
-2. The plugin gives sure-fire reports at the end of the run in IDE console
+2. The plugin gives sure-fire reports at the end of the run in IDE console. The report has the stack trace of all the failing tests whick makes it simple to debug a problem or while doing root cause analysis it could be very helpful.
+
 
 ```
 <build>
