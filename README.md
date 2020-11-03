@@ -46,6 +46,10 @@ A Selenium Project Built to master Page Factory and POM Structure in Selenium
   - TestNG `@Parameters` could be used to execute same test parallelly with multiple browsers   
 
 ### Assertions
+`SoftAssert` will not stop execution of the test if the assertion fails
+`Hard Assert` will stop the test execution if the assertion fails
+`SoftAssert softassert = new SoftAssert();`
+
 
 ### Data-Driven Testing
 Data is entered in the spread sheet `TestData`. The class `DataProviderForExcel` reads the data from the spreadsheet and feeds into the test with the help of TestNG @Dataprovider annotation.
@@ -53,6 +57,7 @@ Data is entered in the spread sheet `TestData`. The class `DataProviderForExcel`
 ### How to execute a particular Suite Xml file using TestNG Maven surefire plugin
 1. Run the test using maven sure fire plugin with commands `mvn clean install` and `mvn test`
 2. The plugin gives sure-fire reports at the end of the run in IDE console. The report has the stack trace of all the failing tests whick makes it simple to debug a problem or while doing root cause analysis it could be very helpful.
+3. 
 
 
 ```

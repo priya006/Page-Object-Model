@@ -13,6 +13,7 @@ import org.testng.annotations.Test;
 
 import browserStackSetup.Setup;
 import DataProvider.*;
+import org.testng.asserts.SoftAssert;
 import ru.yandex.qatools.ashot.AShot;
 import ru.yandex.qatools.ashot.Screenshot;
 import ru.yandex.qatools.ashot.comparison.ImageDiff;
@@ -36,6 +37,7 @@ public class BaseTests extends Setup {
        String pathToSaveImage = "/Users/pboopathi/Desktop/webelementscreen.png";
         takeWebElementScreenShot(element,pathToSaveImage,driver);
         browserStackHomePage.clickOnGetStarted();
+
 
     }
 
@@ -95,6 +97,17 @@ public class BaseTests extends Setup {
 
     }
 
+
+    @Test(priority = 5)
+    public void get_title() throws IOException, InterruptedException {
+        Reporter.log("This test verifies the current selenium compatibility with TestNG by launching the chrome driver");
+        browserStackHomePage.clickOnGetStarted();
+        SoftAssert softAssert = new SoftAssert();
+        String OriginalTitle = driver.getTitle();
+        softAssert.assertEquals(OriginalTitle,"Most Reliable App & Cross Browser Testing Platform | BrowserStack");
+        softAssert.assertAll();
+    }
+
 //    @Test(priority = 5, dataProvider = "excel-data",  dataProviderClass = DataProviderForExcel.class)
 //    //  @Parameters({"name"})
 //
@@ -107,6 +120,9 @@ public class BaseTests extends Setup {
 //        browserStackSignUpPage.enterPasswrod("TestUserPassword");
 //
 //    }
+
+
+
 
     public void takeWebElementScreenShot(WebElement element, String pathname, WebDriver driver) throws IOException {
         Screenshot screenshot  = new AShot().coordsProvider(new WebDriverCoordsProvider()).takeScreenshot(driver,element);
