@@ -55,6 +55,7 @@ A Selenium Project Built to master Page Factory and POM Structure in Selenium
 
 # Limitation
 1. Could not write the loging to a file. The log4j2 properties file can create a log file. But could not write to a file
+2. Data Provider in TestNG was used to provide data from a spread sheet. The TestNG skips the test which is using the annotation @Dataprovider. Different versions of TestNG tried yet the issue could not be resolved
 
 
 Reference

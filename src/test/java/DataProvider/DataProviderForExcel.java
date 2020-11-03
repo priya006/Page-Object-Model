@@ -3,6 +3,7 @@ package DataProvider;
 import java.io.FileInputStream;
 import java.io.IOException;
 
+import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -12,7 +13,7 @@ import org.testng.annotations.DataProvider;
 
 public class DataProviderForExcel {
 
-    @DataProvider(name ="excel-data")
+    @DataProvider(name ="excel-data",parallel = true)
     public Object[][] excelDP() throws IOException {
         //We are creating an object from the excel sheet data by calling a method that reads data from the excel stored locally in our system
         Object[][] arrObj = getExcelData("/Users/pboopathi/Documents/Priya/PETproject/Selenium_POM_Project/src/test/java/TestData/TestData.xlsx","TestData");
@@ -30,7 +31,8 @@ public class DataProviderForExcel {
             XSSFRow row = sh.getRow(0);
             int noOfRows = sh.getPhysicalNumberOfRows();
             int noOfCols = row.getLastCellNum();
-            XSSFCell cell;
+            System.out.println(noOfCols);
+            Cell cell;
             data = new String[noOfRows-1][noOfCols];
             for(int i =1; i<noOfRows;i++){
                 for(int j=0;j<noOfCols;j++){
@@ -41,7 +43,7 @@ public class DataProviderForExcel {
             }
         }
         catch (Exception e) {
-            System.out.println("The exception is: " +e.getMessage());
+           e.printStackTrace();
         }
         return data;
     }
