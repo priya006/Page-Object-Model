@@ -96,7 +96,7 @@ Data is entered in the spread sheet `TestData`. The class `DataProviderForExcel`
 Write a listener class and implement `ITestListener`
 
 ### Custom Reports
-
+Write a Custom Listener class and implement `IReporter`
 
 # Limitations in the Project
 1. Could not write the loging to a file. The log4j2 properties file can create a log file. But could not write to a file

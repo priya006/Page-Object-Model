@@ -1,17 +1,16 @@
 package Testsuite;
 
 
+import browserStackSetup.Setup;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Reporter;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Parameters
-        ;
+
 import org.testng.annotations.Test;
 
-import browserStackSetup.Setup;
+
 import DataProvider.*;
 import org.testng.asserts.SoftAssert;
 import ru.yandex.qatools.ashot.AShot;

@@ -4,7 +4,7 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-import static com.sun.xml.internal.ws.spi.db.BindingContextFactory.LOGGER;
+
 
 public class CustomisedListener  implements ITestListener {
     @Override
@@ -39,7 +39,7 @@ public class CustomisedListener  implements ITestListener {
 
     @Override
     public void onFinish(ITestContext context) {
-        LOGGER.info("PASSED TEST CASES");
+//        LOGGER.info("PASSED TEST CASES");
             System.out.println("Test Method OnFinished" +context.getName() );
 
     }
