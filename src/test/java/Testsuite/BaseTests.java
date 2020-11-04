@@ -98,7 +98,7 @@ public class BaseTests extends Setup {
     }
 
 
-    @Test(priority = 5)
+    @Test(groups = {"demo"})
     public void get_title() throws IOException, InterruptedException {
         Reporter.log("This test verifies the current selenium compatibility with TestNG by launching the chrome driver");
         browserStackHomePage.clickOnGetStarted();

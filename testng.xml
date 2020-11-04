@@ -2,13 +2,20 @@
 
 <suite name="BrowserStack test suite"  parallel="none" >
     <test name="ChromeTest" >
-<!--        <parameter name="browser" value="firefox" />-->
-        <parameter name="browser" value="chrome" >
+        <parameter name="browser" value="chrome"/>
+        <!--        <parameter name="browser" value="firefox" />-->
+        <groups>
+            <run>
+                <exclude name = "demo">
+                </exclude>
+            </run>
+        </groups>
+
 <!--        <parameter name="name" value="Deblyn">-->
 
 
 
-    </parameter>
+
 
         <classes>
             <class name="Testsuite.BaseTests" />
