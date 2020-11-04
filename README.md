@@ -92,11 +92,16 @@ Data is entered in the spread sheet `TestData`. The class `DataProviderForExcel`
 ## Hierarchy of Execution in TestNG
 ![Execution](https://github.com/priya006/Page_Object_Model/blob/master/TestNG.png)
 
-# Limitation
+### Custom Logging
+Write a listener class and implement `ITestListener`
+
+### Custom Reports
+
+
+# Limitations in the Project
 1. Could not write the loging to a file. The log4j2 properties file can create a log file. But could not write to a file
 2. Data Provider in TestNG was used to provide data from a spread sheet. The TestNG skips the test which is using the annotation @Dataprovider. Different versions of TestNG tried yet the issue could not be resolved
 
-### Custom Reporting
 
 
 Reference
