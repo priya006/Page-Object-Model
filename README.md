@@ -56,10 +56,7 @@ Data is entered in the spread sheet `TestData`. The class `DataProviderForExcel`
 
 ### How to execute a particular Suite Xml file using TestNG Maven surefire plugin
 1. Run the test using maven sure fire plugin with commands `mvn clean install` and `mvn test`
-2. The plugin gives sure-fire reports at the end of the run in IDE console. The report has the stack trace of all the failing tests whick makes it simple to debug a problem or while doing root cause analysis it could be very helpful.
-3. 
-
-
+2. The plugin gives sure-fire reports(target/surefire-reports directory) at the end of the run in IDE console. The report has the stack trace of all the failing tests whick makes it simple to debug a problem or while doing root cause analysis it could be very helpful.
 ```
 <build>
         <plugins>
@@ -92,14 +89,14 @@ Data is entered in the spread sheet `TestData`. The class `DataProviderForExcel`
     </build>
 ```
 
-
 ## Hierarchy of Execution in TestNG
 ![Execution](https://github.com/priya006/Page_Object_Model/blob/master/TestNG.png)
-
 
 # Limitation
 1. Could not write the loging to a file. The log4j2 properties file can create a log file. But could not write to a file
 2. Data Provider in TestNG was used to provide data from a spread sheet. The TestNG skips the test which is using the annotation @Dataprovider. Different versions of TestNG tried yet the issue could not be resolved
+
+### Custom Reporting
 
 
 Reference
